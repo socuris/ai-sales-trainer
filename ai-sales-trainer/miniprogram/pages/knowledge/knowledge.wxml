@@ -1,0 +1,13 @@
+<view class="container">
+  <view class="add">
+    <input placeholder="标题" bindinput="onTitle" value="{{title}}" />
+    <textarea placeholder="内容" bindinput="onContent" value="{{content}}"></textarea>
+    <button bindtap="add" loading="{{loading}}">添加到知识库</button>
+  </view>
+  <view class="list">
+    <view class="item" wx:for="{{docs}}" wx:key="index">
+      <view class="item-title">{{item.title}}</view>
+      <view class="item-count">{{item.chunks.length}}个知识点</view>
+    </view>
+  </view>
+</view>

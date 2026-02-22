@@ -1,0 +1,19 @@
+<view class="container">
+  <view wx:if="{{!question}}" class="start">
+    <button bindtap="start">开始训练</button>
+  </view>
+  <view wx:else class="quiz">
+    <view class="title">{{question.题目}}</view>
+    <view class="point">考察点：{{question.考察点}}</view>
+    <textarea placeholder="请输入你的回答" bindinput="onAnswer" value="{{answer}}"></textarea>
+    <button bindtap="submit" loading="{{loading}}">提交</button>
+  </view>
+  <view wx:if="{{result}}" class="result">
+    <view class="score">得分：{{result.得分}}</view>
+    <view class="label">差距分析</view>
+    <view>{{result.差距分析}}</view>
+    <view class="label">优化建议</view>
+    <view wx:for="{{result.优化建议}}" wx:key="index">{{item}}</view>
+    <button bindtap="next">下一题</button>
+  </view>
+</view>

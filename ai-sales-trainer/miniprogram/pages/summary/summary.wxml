@@ -1,0 +1,23 @@
+<view class="container">
+  <view class="form">
+    <input placeholder="客户姓名" bindinput="onInput" data-field="name" />
+    <textarea placeholder="客户需求" bindinput="onInput" data-field="need"></textarea>
+    <input placeholder="预算" bindinput="onInput" data-field="budget" />
+    <view class="deal">
+      <text>是否成交：</text>
+      <switch bindchange="onDeal" />
+    </view>
+    <button bindtap="generate" loading="{{loading}}">生成总结</button>
+  </view>
+  <view wx:if="{{result}}" class="output">
+    <view class="label">客户画像</view>
+    <view>{{result.客户画像}}</view>
+    <view class="label">成交概率</view>
+    <view>{{result.成交概率}}</view>
+    <view class="label">下一步建议</view>
+    <view>{{result.下一步建议}}</view>
+    <view class="label">微信草稿</view>
+    <view class="wechat">{{result.微信草稿}}</view>
+    <button bindtap="copy">复制微信</button>
+  </view>
+</view>

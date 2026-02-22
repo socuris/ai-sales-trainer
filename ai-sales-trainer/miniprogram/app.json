@@ -1,0 +1,25 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/training/training",
+    "pages/qa/qa",
+    "pages/summary/summary",
+    "pages/knowledge/knowledge"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#0066FF",
+    "navigationBarTitleText": "AI销售助手",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#0066FF",
+    "list": [
+      { "pagePath": "pages/index/index", "text": "首页" },
+      { "pagePath": "pages/training/training", "text": "训练" },
+      { "pagePath": "pages/qa/qa", "text": "问答" },
+      { "pagePath": "pages/summary/summary", "text": "总结" }
+    ]
+  },
+  "cloud": true
+}

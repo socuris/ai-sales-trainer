@@ -1,0 +1,16 @@
+<view class="container">
+  <view class="input-box">
+    <textarea placeholder="客户问了什么问题？" bindinput="onInput" value="{{question}}" maxlength="500"></textarea>
+    <button bindtap="submit" loading="{{loading}}">{{loading ? '思考中...' : '获取答案'}}</button>
+  </view>
+  <view class="answer" wx:if="{{answer}}">
+    <view class="label">一句话版本</view>
+    <view class="text">{{answer.一句话版本}}</view>
+    <view class="label">详细解释</view>
+    <view class="text">{{answer.详细解释}}</view>
+    <view class="label">引导问题</view>
+    <view class="text">{{answer.引导问题}}</view>
+    <view class="label">行动建议</view>
+    <view class="text">{{answer.行动建议}}</view>
+  </view>
+</view>

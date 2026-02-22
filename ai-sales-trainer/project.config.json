@@ -1,0 +1,13 @@
+{
+  "miniprogramRoot": "miniprogram/",
+  "cloudfunctionRoot": "cloud/functions/",
+  "appid": "your-appid",
+  "projectname": "ai-sales-trainer",
+  "compileType": "miniprogram",
+  "libVersion": "2.19.0",
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": true
+  }
+}

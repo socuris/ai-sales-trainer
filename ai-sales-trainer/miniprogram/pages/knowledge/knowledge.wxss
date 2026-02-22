@@ -1,0 +1,9 @@
+.container { padding: 30rpx; background: #f5f5f5; min-height: 100vh; }
+.add { background: #fff; border-radius: 16rpx; padding: 30rpx; margin-bottom: 30rpx; }
+input, textarea { width: 100%; border: 1rpx solid #eee; border-radius: 8rpx; padding: 20rpx; box-sizing: border-box; margin-bottom: 20rpx; }
+textarea { height: 200rpx; }
+button { background: #0066FF; color: #fff; }
+.list { background: #fff; border-radius: 16rpx; padding: 30rpx; }
+.item { padding: 20rpx 0; border-bottom: 1rpx solid #eee; }
+.item-title { font-weight: bold; }
+.item-count { color: #999; font-size: 24rpx; }

@@ -1,0 +1,20 @@
+<view class="container">
+  <view class="header">
+    <text class="greeting">早上好！</text>
+    <text class="subtitle">今天也要加油</text>
+  </view>
+  <view class="actions">
+    <view class="action" bindtap="goToQA">
+      <text class="icon">❓</text>
+      <text>客户问答</text>
+    </view>
+    <view class="action" bindtap="goToTraining">
+      <text class="icon">📚</text>
+      <text>产品训练</text>
+    </view>
+    <view class="action" bindtap="goToSummary">
+      <text class="icon">📝</text>
+      <text>接待总结</text>
+    </view>
+  </view>
+</view>

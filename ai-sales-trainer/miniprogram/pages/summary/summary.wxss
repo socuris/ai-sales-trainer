@@ -1,0 +1,8 @@
+.container { padding: 30rpx; background: #f5f5f5; min-height: 100vh; }
+.form, .output { background: #fff; border-radius: 16rpx; padding: 30rpx; }
+input, textarea { width: 100%; border: 1rpx solid #eee; border-radius: 8rpx; padding: 20rpx; box-sizing: border-box; margin-bottom: 20rpx; }
+textarea { height: 150rpx; }
+.deal { display: flex; align-items: center; margin-bottom: 20rpx; }
+button { background: #0066FF; color: #fff; }
+.label { font-weight: bold; margin: 20rpx 0 10rpx; color: #0066FF; }
+.wechat { background: #f5f5f5; padding: 20rpx; border-radius: 8rpx; white-space: pre-wrap; }
